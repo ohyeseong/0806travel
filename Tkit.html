@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Tkit.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/Tkit.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- .top_option 영역 -->
+        <div class="top_option">
+            <ul class="top_option_icon">
+                <li><a href="#" class="top_icon1">아이콘1</a></li>
+                <li><a href="#" class="top_icon2">아이콘2</a></li>
+                <li><a href="#" class="top_icon3">아이콘3</a></li>
+                <li><a href="#" class="top_icon4">아이콘4</a></li>
+            </ul><!-- top_option_icon -->
+        </div><!-- top_option -->
+    
+        <!-- .top_search 영역 -->
+        <div class="top_search">
+            <div class="search_bar">
+                <input type="text" placeholder="검색어를 입력해주세요">
+                <div class="top_search_bicon">
+                    <a href="#">서치 검정</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="top_search_modal"></div>
+    
+        <!-- header 영역(모바일) -->
+        <header class="header">
+            <div class="head_up">
+                <div class="h_logo"><a href="#"><img src="img/로고.png" alt=""></a></div>
+                <!-- 삼선버튼 설정 -->
+                <div class="t_button">
+                    <div class="line">
+                        <div class="line_move">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- head_up -->
+    
+            <!-- 헤더 메인메뉴 영역(모바일) -->
+            <div class="head_down">
+                <ul class="h_mainmenu">
+                    <li>
+                        <a href="#" class="mainmenu1">내 여행</a>
+                        <ul class="sub">
+                            <li><a href="#">여행조회</a></li>
+                            <li><a href="#">일정관리</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#" class="border_none">여행등록</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu2">여행 상품 / 추천</a>
+                        <ul class="sub">
+                            <li><a href="#">여행지별 추천상품</a></li>
+                            <li><a href="#">숙소 추천</a></li>
+                            <li><a href="#">코스 패키지 추천</a></li>
+                            <li><a href="#" class="border_none">일정별 추천 상품</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu3">예약하기</a>
+                        <ul class="sub">
+                            <li><a href="#">여행지 예약</a></li>
+                            <li><a href="#">예약 조회</a></li>
+                            <li><a href="#" class="border_none">예약 취소 및 환불</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu4">둘러보기</a>
+                        <ul class="sub">
+                            <li><a href="#">커뮤니티</a></li>
+                            <li><a href="#">여행기 리뷰</a></li>
+                            <li><a href="#">여행기 작성</a></li>
+                            <li><a href="#">미리보기</a></li>
+                            <li><a href="#" class="border_none">문의사항</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu5">여행 경비</a>
+                        <ul class="sub">
+                            <li><a href="#">여행경비 조회</a></li>
+                            <li><a href="#" class="border_none">마일리지 혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- head_down -->
+        </header><!-- header -->
+    
+        <!-- header 영역(PC) -->
+        <header class="header_pc">
+            <h1 class="logo_pc"><a href="#"><img src="img/로고.png" alt=""></a></h1>
+    
+            <nav class="nav_pc">
+                <ul class="mainmenu_pc">
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">내 여행</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">여행조회</a></li>
+                            <li><a href="#">일정관리</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">여행등록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">여행 상품 / 추천</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">여행지별 상품 추천</a></li>
+                            <li><a href="#">숙소 추천</a></li>
+                            <li><a href="#">코스 패키지 추천</a></li>
+                            <li><a href="#">일정별 추천 상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">예약하기</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">여행지 예약</a></li>
+                            <li><a href="#">예약조회</a></li>
+                            <li><a href="#">예약 취소 및 환불</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">둘러보기</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">커뮤니티</a></li>
+                            <li><a href="#">여행기 리뷰</a></li>
+                            <li><a href="#">여행기 작성</a></li>
+                            <li><a href="#">미리보기</a></li>
+                            <li><a href="#">문의사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc .sub_ar"></div>
+                        <a href="#">여행 경비</a>
+                        <ul class="sub_pc">
+                            <li><a href="#">여행 경비 조회</a></li>
+                            <li><a href="#">마일리지 혜택</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- mainmenu_pc -->
+            </nav><!-- nav_pc -->
+    
+            <div class="sub_pc_bg .sub_ar"></div>
+    
+            <div class="login_pc">
+                <div class="login_title_pc">
+                    <div><a href="#">로그인</a></div>
+                    <div><a href="#">회원가입</a></div>
+                </div>
+            </div><!-- login_pc -->
+        </header><!-- header_pc -->
+    
+        <!-- .img_slide 영역(PC) -->
+        <div class="img_slide_pc">
+            <ul class="slider-for">
+                <li class="img_pc1">
+                        <h2>동남아에서 즐기는 SUMMER TOUR</h2>
+                        <p>코스 50% 할인 이벤트</p>
+                </li>
+    
+                <li class="img_pc2">
+                        <h2>이탈리아 여행 트립팩 30% 할인</h2>
+                        <p>트리머니 마일리지 적립</p>
+                </li>
+    
+                <li class="img_pc3">
+                        <h2>필리핀 보라카이</h2>
+                        <p>Tkit 마일리지 10% 적립</p>
+                </li>
+    
+                <li class="img_pc4">
+                        <h2>남부 에버 화이트 투어</h2>
+                        <p>코스 A / B</p>
+                </li>
+    
+                <li class="img_pc5">
+                        <h2>아이슬란드 딮코스 나이트팩</h2>
+                        <p>Tkit 마일리지 10% 적립</p>
+    
+                </li>
+            </ul><!-- slide_list_pc -->
+    
+            <button class="slide_baro_btn_pc">예약하기</button>
+        </div><!-- img_slide_pc -->
+    
+        <!-- 이미지 슬라이드 동기화 모드pc형 -->
+        <div class="img_slide_mode">
+            <ul class="slider-nav">
+                <li><a href="#" class="mode_img1">이미지1</a></li>
+                <li><a href="#" class="mode_img2">이미지1</a></li>
+                <li><a href="#" class="mode_img3">이미지1</a></li>
+                <li><a href="#" class="mode_img4">이미지1</a></li>
+                <li><a href="#" class="mode_img5">이미지1</a></li>
+            </ul>
+        </div>
+        <!-- img_slide_mode -->
+        
+        <!-- skill 모바일형 -->
+        <div class="skill">
+            <div class="skill_title title">
+                <p>여행에 필요한 모든것을 Tkit에서! <br>여행계획을 더 간편하게 관리</p>
+            </div>
+    
+            <div class="skill_cont title">
+                <div class="skill_cont1">
+                    <div class="skill_list">
+                        <p>일정체크</p>   
+                        <div class="skill_img1 skill_img">
+                            이미지
+                            <div class="skill_modal"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill_cont2">
+                    <div class="skill_list">
+                        <p>나만의 여행플랜</p> 
+                        <div class="skill_img2 skill_img">
+                            이미지
+                            <div class="skill_modal"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill_cont3">
+                    <div class="skill_list">
+                        <p>여행경비 확인</p> 
+                        <div class="skill_img3 skill_img">
+                            이미지
+                            <div class="skill_modal"></div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div><!-- skill_cont -->
+        </div><!-- skill -->
+
+        <!-- 이미지 슬라이드 모바일형 -->
+        <div class="img_slide_m title">
+            <ul class="slide_list_m">
+                <li>
+                    <a href="#" class="slide_img_m1">이미지</a>
+                    <h3>동남아에서 즐기는 SUMMER TOUR</h3>
+                    <p>코스 A 50% 할인 이벤트</p>
+                    <div class="slide_bg_m"></div>
+                </li>
+
+                <li>
+                    <a href="#" class="slide_img_m2">이미지</a>
+                    <h3>이탈리아 여행 트립팩 30% 할인</h3>
+                    <p>트리 머니 마일리지 적립</p>
+                    <div class="slide_bg_m"></div>
+                </li>
+                
+                <li>
+                    <a href="#" class="slide_img_m3">이미지</a>
+                    <h3>필리핀 보라카이</h3>
+                    <p>Tkit 마일리지 10% 적립</p>
+                    <div class="slide_bg_m"></div>
+                </li>
+                
+                <li>
+                    <a href="#" class="slide_img_m4">이미지</a>
+                    <h3>남부 에버 화이트 투어</h3>
+                    <p>코스 A / B</p>
+                    <div class="slide_bg_m"></div>
+                </li>
+                
+                <li>
+                    <a href="#" class="slide_img_m5">이미지</a>
+                    <h3>아이슬란드 딮코스 나이트팩</h3>
+                    <p>Tkit 마일리지 10% 적립</p>
+                    <div class="slide_bg_m"></div>
+                </li>
+            </ul>
+
+            <button class="slide_btn_m">
+                예약하기
+            </button>
+        </div><!-- img_slide_m -->
+
+        <!-- .location 영역 -->
+        <div class="location title">
+            
+            <p class="location_title1">
+                해외여행 최적의 경로로 이동해요
+            </p>
+            <p class="location_title2">
+                실시간으로 안내해드리는 경로에 따라 <br>
+                편안하고 안전한 여행길이 될수 있도록 도와드릴게요
+            </p>
+            
+            <div class="loc_img">이미지</div>
+            
+            <div class="location_bg_m"></div>
+        </div><!-- location -->
+
+        <!-- t_event 영역(모바일 버전) -->
+        <div class="t_event_m">
+            <h2 class="title">
+                Tkit에서 여행지에 따라 혜택을 확인해보시고 <br>
+                여행가서 많은혜택 누리세요~
+            </h2><!-- event_title -->
+            
+            <ul class="event_img_list_m">
+                <li>
+                    <a href="#" class="front1 front">이미지</a>
+                    <a href="#" class="back1 back">이미지</a>
+                </li>
+
+                <li>
+                    <a href="#" class="front2 front">이미지</a>
+                    <a href="#" class="back2 back">이미지</a>
+                </li>
+
+                <li>
+                    <a href="#" class="front3 front">이미지</a>
+                    <a href="#" class="back3 back">이미지</a>
+                </li>
+
+                <li>
+                    <a href="#" class="front4 front">이미지</a>
+                    <a href="#" class="back4 back">이미지</a>
+                </li>
+            </ul>
+        </div><!-- t_event_m -->
+
+        <hr>
+
+        <!-- t_event_pc형 -->
+        <div class="t_event_pc">
+            <p class="title">Tkit에서 여행지에 따라 혜택을 확인해보시고 <br> 여행가서 많은혜택 누리세요~</p>
+
+            <div class="t_event_box">
+                <div class="rot_box">
+                    <div class="flip">
+                        <div class="card front_pc fr1"></div>
+                        <div class="card back_pc bc1"></div>
+                    </div>
+                </div>
+
+                <div class="rot_box">
+                    <div class="flip">
+                        <div class="card front_pc fr2"></div>
+                        <div class="card back_pc bc2"></div>
+                    </div>
+                </div>
+
+                <div class="rot_box">
+                    <div class="flip">
+                        <div class="card front_pc fr3"></div>
+                        <div class="card back_pc bc3"></div>
+                    </div>
+                </div>
+
+                <div class="rot_box">
+                    <div class="flip">
+                        <div class="card front_pc fr4"></div>
+                        <div class="card back_pc bc4"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- t_event_pc -->
+
+        <!-- .kit_event 모바일 영역 -->
+        <div class="kit_event_m">
+            <p class="kit_e_title_m">
+                Tkit에서 즐겁게 여행을 준비하고 <br>
+                추억을 나누기만 해도 쌓이는 Tkit만의 여행혜택을 <br>
+                지금 바로 누려보세요!
+            </p>
+
+            <button class="kit_e_btn_m pop_kit_e">자세히보기</button>
+
+            <div class="wave_left_m1 wave_left_m"></div>
+            <div class="wave_left_m2 wave_left_m"></div>
+
+            <div class="wave_right_m1 wave_right_m"></div>
+            <div class="wave_right_m2 wave_right_m"></div>
+
+            <div class="boat_img">이미지</div>
+        </div><!-- kit_event -->
+
+        <!-- kit_event_pc 영역 -->
+        <div class="kit_event_pc">
+            <p class="kit_e_title_pc">
+                Tkit에서 즐겁게 여행을 준비하고 <br>
+                추억을 나누기만 해도 쌓이는 Tkit만의 여행혜택을 <br>
+                지금 바로 누려보세요!
+            </p>
+
+            <button class="kit_e_btn_pc pop_kit_e">자세히보기</button>
+
+            <div class="wave_left_pc1 wave_left_pc"></div>
+            <div class="wave_left_pc2 wave_left_pc"></div>
+
+            <div class="wave_right_pc1 wave_right_pc"></div>
+            <div class="wave_right_pc2 wave_right_pc"></div>
+
+            <div class="boat_img_pc">이미지</div>
+        </div><!-- kit_event_pc -->
+
+        <div class="Tkit_event_pop">
+            <h2>Tkit 오픈 이벤트</h2>
+            <p>첫 여행 등록 여행시 Tkit 마일리지 5% 추가 적립 <br> 숙소 예약, 쿠폰 할인 10% 추가 할인</p>
+            <ul class="Tkit_event2">
+                <li>
+                    <p>첫 여행예약</p>
+                    <div class="txt_blue">10%</div>
+                </li>
+                <li>
+                    <p>지인과 함께</p>
+                    <div class="txt_blue">15%</div>
+                </li>
+                <li>
+                    <p>MVP</p>
+                    <div class="txt_blue">20%</div>
+                </li>
+            </ul>
+
+            <div class="Tkit_event_pop_close">이미지</div>
+        </div>
+
+        <div class="Tkit_event_modal"></div>
+    </div><!-- wrap -->
+
+</body>
+</html>
